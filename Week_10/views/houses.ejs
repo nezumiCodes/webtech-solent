@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/banner.ejs') %>
+    <div class="container">
+      <%- include('./partials/navbar.ejs') %>
+      
+      <h1>Answer the questions below to see how your answer matches our houses</h1>
+
+      <h3 id="result"></h3>
+
+      <div id="q1">
+        <h3 id="q1-h3">You hear a MASSIVE spider! It's the size of a car! What do you do?</h3>
+        <button id="q1-leftBtn">Ignore all my fears and walk right in to its den for a chat</button>
+        <button id="q1-rightBtn">I won't probably look at the den</button>
+      </div>
+
+      <div id="q2">
+        <h3 id="q2-h3">How many Harry Potter does it take to screw in a light bulb?</h3>
+        <button id="q2-leftBtn">One, he just holds it and the WHOLE world revolves around him</button>
+        <button id="q2-rightBtn">The other answer is neither nice or accurate</button>
+      </div>
+
+      <div id="q3">
+        <h3 id="q3-h3">A supervillain has told everyone that they will be spared if they join the evil army:</h3>
+        <button id="q3-leftBtn">I will weigh up the pros and cons of each prossibility</button>
+        <button id="q3-rightBtn">I'm inlikely to join an evil army</button>
+      </div>
+
+
+      <%- include('./partials/footer.ejs') %>
+    </div>
+    <script src="scripts/houses.js"></script>
+  </body>
+</html>
