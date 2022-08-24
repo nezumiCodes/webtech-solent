@@ -92,13 +92,8 @@ Use as many of those blocks of code as you need, depending on how many pages you
 
 <hr>
 
-7) Communication with Database, GET and POST results.
+7) Communication with Database, GET and POST results. (TO BE CONTINUED IN WEEK 11)
 ![Browser Server Communication for Forms](./public/images/POST_GET_REDIRECTS.png)
-
-- Run MySQL from Apache
-- On a web broweser access `localhost/phpmyadmin`
-- Create a database, and then a table inside the database. Choose as many columns as the number of items you need to add to the table, and select the appropriate data types.
-- 
 
 <hr>
 
