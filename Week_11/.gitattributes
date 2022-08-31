@@ -1,0 +1,20 @@
+# https://git-scm.com/docs/gitattributes
+
+# normalise line endings automatically
+* text=auto
+
+# denote binary files
+*.jpg
+*.png
+
+###############################
+# Git Large File System (LFS) #
+###############################
+
+# Archives
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Images
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
