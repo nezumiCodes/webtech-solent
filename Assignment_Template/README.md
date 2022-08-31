@@ -1,5 +1,7 @@
 # Creating a website with Node.js (server), Express (routes), EJS (html templating) and MySQL (database)
 
+#### (either start the project from scratch or download template.zip, unzip it and skip the folder creation in step 2)
+
 1) Open a terminal in VSCode (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>'</kbd>), and write the following commands:
 ```(javascript)
 npm -y init // initialise Node.js and Node Package Manager (npm)
@@ -72,18 +74,18 @@ Use as many of those blocks of code as you need, depending on how many pages you
 <hr>
 
 7) Communication with Database, GET and POST results.
-![Browser Server Communication for Forms](./public/images/POST_GET_REDIRECTS.png)
+![Browser Server Communication for Forms](./images/POST_GET_REDIRECTS.png)
 
 - Run MySQL and Apache from XAMPP
 - On a web browser access `localhost/phpmyadmin`
 - Create a database, and then a table inside the database. Choose as many columns as the number of items you need to add to the table, and select the appropriate data types.
 
-![MySQL Table Columns](./public/images/mysql_table.png)
+![MySQL Table Columns](./images/mysql_table.png)
 
 - Add the `database.js` to the root of your project (change only the `database` field of the `.createConnection()` method with the name of your database)
 - Import the `database.js` file in your `server.js` by writing `const <db_name> = require('./database')`.
 - In the form of your contact-us page, you will need to add the attribute `method='POST'` and `action='...'`. The action will be the route that will handle your data inside of your `server.js`.
-![Form Attributes](./public/images/form_attr.png)
+![Form Attributes](./images/form_attr.png)
 - In your `server.js` file, you will need to build your `app.post()` method, that will handle the data sent by the user, and save them in your database.
 Inside of this method, you will have to write the **query** needed to interact with the database and save your data. 
 f.e. ```let query = `INSERT INTO <table_name> (<column_name>, <column_name>, <column_name>, ...) VALUES ("${req.body.<var_name>}", "${req.body.<var_name>}", "${req.body.<var_name>}", ...)';```
@@ -95,12 +97,5 @@ f.e. ```let query = `INSERT INTO <table_name> (<column_name>, <column_name>, <co
 Open up a terminal, and write this:
 `nmp start`
 You can access your project through a browser by typing `localhost:__port_num__`
-
-<details>
-<summary>Click here</summary>
-<pre>
-one
-two
-three
 
 
