@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css"/>
+    <title>Contact Us</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Welcome to <br>Hogwarts</h1>
+    </div>
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Browse</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div id="contactForm">
+        <h3>Please use the form below to contact us</h3>
+    
+        <form id="contact">
+            <label for="uname">Name:</label>
+            <input type="text" id="uname" name="uname" required/><br/>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required/><br/>
+            <p>Which package is your query about?</p>
+            <input type="radio" id="standard" name="choices" value="Standard"/>
+            <label for="standard">Standard</label>
+            <input type="radio" id="chosenOne" name="choices" value="The Chosen One Package"/>
+            <label for="chosenOne">The Chosen One Package</label><br/>
+            <label for="numOwl">We may respond with an Owl, on a scale of 1-10, how scared are you of owls?</label>
+            <p>(10 is the most scared)</p>
+            <input type="number" id="numOwl" name="numOwl" min="1" max="10" required><br/>
+            <label for="comments">Please enter your query:</label><br/>
+            <textarea id="comments" name="comments" required></textarea><br/>
+            <input type="submit" value="Submit"/><br/>
+        </form>
+    </div>
+
+    <div id="footer">
+        <h2>Testimonials</h2>
+    </div>
+    <div class="paragraph">
+        which included sloping lawns, flowerbeds, vegetable patches, as well as a loch
+    </div>
+    <div class="paragraph">
+        which included sloping lawns,
+    </div>
+    <div class="paragraph">
+        which included sloping lawns, flowerbeds, vegetable patches, as well as a loch
+    </div>
+
+    <script type="text/javascript" src="./scripts/contact.js"></script>
+</body>
+</html>
