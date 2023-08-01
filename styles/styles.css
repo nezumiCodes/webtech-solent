@@ -7,21 +7,23 @@ body{
     left: 0;
     font-family: 'Exo 2';
     color: white;
+    padding: 0 5%;
 }
 
 #header {
+    position: relative;
+    top: 0; /* place it at the very top of the screen */
+    left: 0; /* place it at the very left of the screen */
+    height: 60vh;
     background-image: url("../images/banner.jpg");
-    
-    height: 80vh;
-    text-align: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
+    background-size: 100% 60vh; /* change background image size to fit container */
+    display: flex;     /* flex specifies that the item will grow/shrink to fit the availbale space */       
+    align-items: center; /* used along with flex to align child-items vertically */
+    text-align: center; /* align child-items horizontally */    
 }
 
 #header h1 {
-    position: relative;
-    flex: auto;
+    flex: auto; /* center text inside of h1 box*/
     font-size: 90px;
 }
 
@@ -118,6 +120,8 @@ body{
     border-radius: 6px;
     width: 100%;
     height: 1.5rem;
+    margin-top: 3px;
+    margin-bottom: 17px;
 }
 
 #contact input[type="radio"] {
@@ -130,6 +134,8 @@ body{
     color: white;
     border: 1px solid white;
     font-size: larger;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 #contact textarea {
@@ -137,7 +143,19 @@ body{
     box-sizing: border-box;
     border-radius: 6px;
     min-height: 10rem;
+    max-height: 15rem;
     margin-bottom: 10px;
+    resize: vertical; /* the text area can only change its height and not width*/
+    margin-top: 17px;
+}
+
+
+/* ------------------------------------ */
+
+/* FOR houses.html */
+
+#q2, #q3, #result {
+    display: none;
 }
 
 
